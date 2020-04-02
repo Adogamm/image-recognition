@@ -96,8 +96,8 @@ clasificar(File image) async{
 //Cargar modelo
 loadModel() async{
     await Tflite.loadModel(
-        model: "",
-        labels: "",
+      model: "assets/model_unquant.tflite",
+      labels: "assets/labels.txt",
     );
 }
 
